@@ -1,0 +1,87 @@
+// objetos de herramientas y lenguages
+export const cardItemsList = [
+  /* {
+    name: "Html",
+    source: "./images/lenguages/html.png",
+    description: 'Frontend',
+    link: '',
+    color: "#0C9A9C",
+  },
+  {
+    name: "Css",
+    source: "./images/lenguages/css.png",
+    description: 'Frontend',
+    link: '',
+    color: "#0C9A9C",
+  }, */
+  {
+    name: "Javascript",
+    source: "./images/lenguages/javascript.png",
+    description: 'Lenguaje',
+    link: '',
+    color: "#0C9A9C",
+  },
+  {
+    name: "React",
+    source: "./images/lenguages/react.png",
+    description: 'Frontend',
+    link: '',
+    color: "#0C9A9C",
+  },
+  {
+    name: "Kotlin",
+    source: "./images/lenguages/kotlin.png",
+    description: 'Lenguaje',
+    link: '',
+    color: "#833385",
+  },
+  {
+    name: "Java",
+    source: "./images/lenguages/java.png",
+    description: 'Lenguaje',
+    link: '',
+    color: "#0812D8",
+  },
+  {
+    name: "Firebase",
+    source: "./images/lenguages/firebase.png",
+    description: 'Base de datos',
+    link: '',
+    color: "#D84408",
+  },
+  {
+    name: "Threejs",
+    source: "./images/lenguages/threejs.png",
+    description: 'Frontend',
+    link: '',
+    color: "#FFF",
+  },
+  {
+    name: "Android Studio",
+    source: "./images/lenguages/androidStudio.png",
+    description: 'Herramienta',
+    link: '',
+    color: "#0C9A9C",
+  },
+  {
+    name: "Springboot",
+    source: "./images/lenguages/springboot.png",
+    description: 'Base de datos',
+    link: '',
+    color: "#0C9A9C",
+  },
+  {
+    name: "Tailwind",
+    source: "./images/lenguages/tailwind.png",
+    description: 'Frontend',
+    link: '',
+    color: "#0C9A9C",
+  },
+  {
+    name: "Vite",
+    source: "./images/lenguages/vite.png",
+    description: 'Desarrollo',
+    link: '',
+    color: "#0C9A9C",
+  },
+];
