@@ -20,7 +20,7 @@ const Introduction = () => {
       className="w-full h-screen text-white flex flex-col items-center justify-center"
     >
       <Text
-        text={"Hola! Soy Kevin L."}
+        text={"Hola! Soy Kevin Leon."}
         styles={"lg:text-5xl text-3xl typewriter text-violet-900 font-bold"}
       />
 
