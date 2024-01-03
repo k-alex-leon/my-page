@@ -19,6 +19,6 @@ export const projects = [
     name: "Rubik's cube",
     icon: "./images/projects/rubik.PNG",
     description: `Una web que te permite interactuar con un cubo rubik 3D. Elaborado con React y THREE.js`,
-    link: "https://github.com/k-alex-leon/3d-react-rubikcube",
+    link: "https://k-alex-leon.github.io/3d-react-rubikcube/",
   },
 ];
