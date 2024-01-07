@@ -106,12 +106,11 @@ const Education = () => {
           academica y mi compromiso con el aprendizaje.
         </p>
 
-        <div className="md:w-3/5 h-1/4 mt-20 ">
+        <div className="static md:w-3/5 w-4/5 h-1/4 mt-20">
           <swiper-container
-            className="mySwiper"
+            className="mySwiper static select-none"
             speed="800"
             effect="cards"
-            loop="true"
             pagination="true"
             grab-cursor="true"
           >
@@ -247,7 +246,7 @@ const Contact = () => {
 
 const Segments = () => {
   return (
-    <div className="md:w-2/3 w-full h-full transition duration-500 select-none">
+    <div className="md:w-2/3 w-full h-full select-none">
       <Introduction />
       <Knowledge />
       <Work />
