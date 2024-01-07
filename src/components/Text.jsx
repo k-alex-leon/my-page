@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { notifyInfo } from "../utils/notifications";
+import { notifyInfo } from "../utils/Notifications";
 
 const Text = ({text, styles}) => {
   let container = useRef();

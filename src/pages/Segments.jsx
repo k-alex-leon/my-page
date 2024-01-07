@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { cardItemsList } from "../utils/cardItemsList";
+import { cardItemsList } from "../data/cardItemsList";
 import CardItem from "../components/CardItem";
 import Text from "../components/Text";
-import { certifications } from "../utils/certificationsList";
-import { projects } from "../utils/projectsList";
+import { certifications } from "../data/certificationsList";
+import { projects } from "../data/projectsList";
 import AppProjectCard from "../components/AppProjectCard";
 import Title from "../components/Title";
 import emailjs from "@emailjs/browser";
@@ -11,7 +11,8 @@ import {
   notifyError,
   notifySuccess,
   notifyWarning,
-} from "../utils/notifications";
+} from "../utils/Notifications";
+import { validateForm } from "../utils/Validations";
 
 const Introduction = () => {
   return (
@@ -131,35 +132,7 @@ const Education = () => {
 const Contact = () => {
   const emailForm = useRef();
 
-  const validateForm = () => {
-    // email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    let form = emailForm.current;
-    let emailData = {
-      name: form.querySelector('input[name="to_name"]').value ?? "",
-      email: form.querySelector('input[name="from_name"]').value ?? "",
-      msg: form.querySelector('textarea[name="message"]').value ?? "",
-    };
-
-    // NAME VALIDATION
-    if (emailData.name === "") {
-      notifyWarning("El nombre no puede ir vacio.");
-      return false;
-    }
-    // EMAIL VALIDATION
-    if (emailData.email === "" || !emailRegex.test(emailData.email)) {
-      notifyWarning("Verifica tu correo.");
-      return false;
-    }
-    // MSG VALIDATION
-    if (emailData.msg === "") {
-      notifyWarning("Debes escribir un mensaje.");
-      return false;
-    }
-
-    return true;
-  };
+  
 
   const clearInputs = (e) => {
     e.target.reset()
@@ -169,7 +142,7 @@ const Contact = () => {
     // prevenir el refresh de la pagina
     e.preventDefault();
 
-    if (!validateForm()) return;
+    if (!validateForm(emailForm.current)) return;
 
     emailjs
       .sendForm(
