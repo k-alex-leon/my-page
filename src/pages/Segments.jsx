@@ -7,11 +7,7 @@ import { projects } from "../data/projectsList";
 import AppProjectCard from "../components/AppProjectCard";
 import Title from "../components/Title";
 import emailjs from "@emailjs/browser";
-import {
-  notifyError,
-  notifySuccess,
-  notifyWarning,
-} from "../utils/Notifications";
+import { notifyError, notifySuccess } from "../utils/notifications";
 import { validateForm } from "../utils/Validations";
 
 const Introduction = () => {
@@ -50,7 +46,7 @@ const Knowledge = () => {
           algunas herramientas que he encontrado en el camino:
         </p>
 
-        <div className="w-full grid grid-cols-5 grid-cols-3 mt-4">
+        <div className="w-full grid md:grid-cols-5 grid-cols-3 mt-4">
           {cardItemsList.map((lngs) => (
             <CardItem key={lngs.name} obj={lngs} />
           ))}

@@ -11,7 +11,7 @@ const AppProjectCard = ({ project }) => {
         // abre nueva ventana al link del project
         window.open(project.link, "_blank");
       }}
-      className="z-10 h-4/5 flex flex-col shadow relative shadow-white rounded-lg m-2"
+      className="z-10 h-4/5 flex flex-col shadow relative shadow-white rounded-lg md:m-2"
     >
       <img
         className={`w-full h-full bottom-0 ${mouseIn && 'opacity-25'} transition duration-500 rounded-lg`}

@@ -9,7 +9,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { MyPhone } from "../components/MyPhone";
 import Segments from "./Segments";
-import { notifyWarning } from "../utils/Notifications";
+import { notifyWarning } from "../utils/notifications";
+import TopNavbar from "../components/TopNavbar";
 
 const App = () => {
   const [appClicked, setApp] = useState("");
@@ -25,6 +26,7 @@ const App = () => {
 
   return (
     <>
+      {widthSize < 700 && <TopNavbar iconClicked={(e) => setApp(e)}/>}
       <div className="md:flex container text-white">
         <Segments segment={appClicked} />
 
