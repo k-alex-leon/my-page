@@ -112,7 +112,7 @@ const Education = () => {
           >
             {certifications.map((crt) => (
               <swiper-slide key={crt.name}>
-                <a href="https://www.google.com" target="_blank">
+                <a href={crt.link} target="_blank">
                   <img className="h-2/3 p-2" src={crt.image} alt={crt.name} />
                 </a>
               </swiper-slide>
